@@ -1,0 +1,19 @@
+.hero--page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* max-width is used to keep the 
+image to maintain its original size*/
+.hero--photo {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--header {
+    margin-bottom: 16px;
+}
+
+.hero--text {
+    margin-top: 0;
+}

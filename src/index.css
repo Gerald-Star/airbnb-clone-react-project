@@ -1,13 +1,29 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* All generic designs for 
+every components is styled here.
+
+For this to happen, the same class name is given to those component sections.
+This makes the styling to appear same in diiferent componenets
+with the same class name. */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.gray {
+  color: #918E9B;
+}
+
+.bold {
+  color: black;
+  font-weight: 700;
+}
+
+section {
+  padding: 20px;
 }
