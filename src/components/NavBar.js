@@ -1,6 +1,6 @@
 import React from 'react'
 import './NavBar.css'
-import Logo from '../images/airbnb-logo.png'
+// import Logo from '../images/airbnb-logo.png'
 
 
 /* Building Navbar component*/
@@ -11,7 +11,7 @@ export default function NavBar() {
       <div>
           
           <nav className='nav-logo'>
-              <img src={Logo} alt="Logo" className='nav_logo'/>
+              <img src='../images/airbnb-logo.png' alt="Logo" className='nav_logo'/>
           </nav>
     </div>
   )

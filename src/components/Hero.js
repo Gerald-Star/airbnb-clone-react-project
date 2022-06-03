@@ -1,8 +1,8 @@
 import React from 'react'
 import './Hero.css'
 
-// import Photo-Grid from '../images/photo-grid.png'
-import Photo from '../images/photo-grid.png'
+// 
+// import Photo from '../images/photo-grid.png'
 
 
 /*Build the hero component */
@@ -17,7 +17,7 @@ export default function Hero() {
         */
       <section className='hero--page'>
           
-          <img src={Photo} alt="" className='hero--photo' />
+          <img src='../images/photo-grid.png' alt="" className='hero--photo' />
           
           <h1 className='hero--header'>Online Experience</h1>
             <p className='hero--text'>Join a unique interactive training and
