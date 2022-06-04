@@ -10,27 +10,43 @@ import './Card.css'
 //As another method of passing props.
 
 export default function Card(props) {
-  return (
-      <div className='card'>
 
+  let badgeText
+  if (props.openSpots === 0) {
+    badgeText = 'SOLD OUT'
+  } else if (props.location === 'Online') {
+    badgeText = 'ONLINE'
+  }
+
+
+  return (
+    <div className='card'>
+      {/* 2. Better method conditional rendering. To show whwn each card is online/sold out withouthard coding it.
+      Use the If/else method */}
+
+      {badgeText && <div className='card--badge'>{ badgeText}</div> }
+
+
+      {/* I. using simple JS conditional rendering */}
+      {/* {props.openSpots === 0 && <div className='card--badge'>SOLD OUT</div>} */}
       
-          {/* <img src={Katie} alt="" className='card--image' /> */}
-          {/* passing props with template literal method with $ sign
+      {/* <img src={Katie} alt="" className='card--image' /> */}
+      {/* passing props with template literal method with $ sign
            */}
 
           <img src={`../images/${props.img}`} alt="" className="card--image" />
       
-          <div className='card--span'>
+          <div className='card--stats'>
               <img src='../images/star.png' alt="star" className='card--star'/>
-             <span>{props.rating}</span>
-        
-              <span className='gray'>{props.reviewCount} . </span>
-              <span className='gray'>{props.country}</span>
+             
+              <span>{props.rating}</span>
+              <span className='gray'>({props.reviewCount}) . </span>
+              <span className='gray'>{props.location}</span>
 
           </div>
 
-          <p>{props.title }</p>
-          <p><span className='bold'>From ${props.price}</span> / person</p>
+          <p className='card--title'>{props.title }</p>
+          <p className='card--price'><span className='bold'>From ${props.price}</span> / person</p>
 
     </div>
   )

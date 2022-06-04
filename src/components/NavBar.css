@@ -13,6 +13,6 @@ the logo stretches upto the center.
 Therefore, always add max-width to maintain the logo
 size */
 
-.nav_logo {
+.nav-logo-image{
     max-width: 100px;
 }

@@ -1,19 +1,60 @@
 .card {
     width: 175px;
     font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    /* flex 0 0 0 makes the images smaller like ecommerce
+    when the images are plenty.
+    flex 0 0 auto makes the image to be sizable to the screen,
+    when a minimum of 4 to 5 images. */
+    
 }
 
 .card--image {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 9px;
 
 }
 
-.card--span /* stats*/ {
+.card--stats /* stats*/ {
     display: flex;
     align-items: center;
 }
 
+.gray {
+  
+  color: #918E9B;
+}
+
+.bold {
+  color: black;
+  font-weight: 700;
+}
+
+
 .card--star {
     height: 14px;
+}
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-price {
+    margin-top: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 4px;
+    font-weight: bold;
 }

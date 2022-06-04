@@ -1,3 +1,34 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+Conditional Rendering
+
+This is sometimes when we want to render only some part of our page from the data.
+ Here, we render an id open sport from the props anytime it is called.
+
+ we then create a prop called openSpot in our App.js in our card.
+
+ whenyou  console.log (props.openSpots) in the card.js. The number of all openSpots 
+ data will appear.
+
+ steps in Card.js
+ hard code <div> Sold out </div>
+
+ and set it position: relative in css.
+
+ this appears on the cards.
+
+ To handle conditional rendering we don#t need to always hard code it.
+  To be a JS we cover the div in curly braces makeimg it a JS object.
+
+  Using simple JS conditional rendering method- 
+  {props.openSpots === 0 && <div> Sold out </div>}
+
+  This means anytime if the first statement is truthy === 0,
+  the second statement/the JSX will run and get displayed.
+
+  But if the first statement is falsy, the second statement won't run.
+  Therefore it won't be called. 0 is a falsy statement in JS
+

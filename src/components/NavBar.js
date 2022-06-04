@@ -11,7 +11,7 @@ export default function NavBar() {
       <div>
           
           <nav className='nav-logo'>
-              <img src='../images/airbnb-logo.png' alt="Logo" className='nav_logo'/>
+              <img src='../images/airbnb-logo.png' alt="Logo" className='nav-logo-image'/>
           </nav>
     </div>
   )

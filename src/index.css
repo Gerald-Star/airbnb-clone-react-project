@@ -1,5 +1,5 @@
 *{
-  margin: 0;
+  
   box-sizing: border-box;
   
 }
@@ -13,16 +13,20 @@ This makes the styling to appear same in diiferent componenets
 with the same class name. */
 
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-.gray {
+
+
+/* .gray {
+  
   color: #918E9B;
 }
 
 .bold {
   color: black;
   font-weight: 700;
-}
+} */
 
 section {
   padding: 20px;
